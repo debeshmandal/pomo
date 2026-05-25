@@ -8,6 +8,8 @@ fn main() -> eframe::Result<()> {
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
             .with_inner_size([340.0, 500.0])
+            .with_min_inner_size([340.0, 500.0])
+            .with_max_inner_size([340.0, 500.0])
             .with_resizable(false)
             .with_title("Pomodoro Timer"),
         ..Default::default()
